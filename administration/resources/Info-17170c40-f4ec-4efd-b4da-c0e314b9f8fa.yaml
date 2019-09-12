@@ -1,0 +1,21 @@
+- defaultTab: summary
+  description: ''
+  executionEnabled: true
+  group: administration/resources
+  id: 17170c40-f4ec-4efd-b4da-c0e314b9f8fa
+  loglevel: INFO
+  name: Info
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - description: uname
+      exec: uname -a
+    - description: whoami
+      exec: whoami
+    - description: ansible version
+      exec: ansible --version
+    keepgoing: false
+    strategy: node-first
+  uuid: 17170c40-f4ec-4efd-b4da-c0e314b9f8fa
+
